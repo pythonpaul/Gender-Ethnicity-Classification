@@ -5,7 +5,7 @@ pd.options.display.float_format = '{:.0f}'.format
 
 def grocery():
 
-    grocery_names = pd.read_csv('jan_2022_data.csv')
+    grocery_names = pd.read_csv('feb_2022_data.csv')
     #grocery_names['SHIPPING_FIRST_NAME'] = grocery_names['SHIPPING_FIRST_NAME'].astype(str)
 
     d = gender.Detector()
@@ -22,6 +22,6 @@ def grocery():
 
     print(grocery_names)
     
-    grocery_names.to_excel('jan_2022_data.xlsx')
+    grocery_names.to_excel('feb_2022_gender.xlsx')
 
 grocery()
